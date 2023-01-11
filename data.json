@@ -1,0 +1,157 @@
+{
+    "userData": [
+        {
+            "name": "Fahad",
+            "email": "Fahad@gmail.com",
+            "Address": "Patna,Maharastra,2-62/A,531033"
+        }
+    ],
+    "VehicalData": [
+        {
+            "MFT": "NEXON - D - AMT",
+            "variant": "NEXON (D) XZA+ P DARK",
+            "color": "ATLAS BLACK"
+        }
+    ],
+    "BankDetails": [
+        {
+            "AccountNo": "918918918191889",
+            "IFSC": "KKMMJ978H",
+            "BENEFICIARY_NAME": "PRERANA MOTORS PVT LTD",
+            "BANK": "KOTAK MAHINDRA BANK LTD",
+            "BRANCH": "LAVELLE ROAD",
+            "BRANCH_ADDRESS": "10/7, UMIYA LANDMARK, LAVELLE ROAD, BENGALURU-560001",
+            "ACCOUNT_TYPE": "CC"
+        }
+    ],
+    "Bill": [
+        {
+            "id": 1,
+            "PARTICULAR": "EX SHOWROOM PRICE",
+            "AMOUNT": "14,12,900"
+        },
+        {
+            "id": 2,
+            "PARTICULAR": "CONSUMER SCHEME",
+            "AMOUNT": "-"
+        },
+        {
+            "id": 3,
+            "PARTICULAR": "CORPORATE DISCOUNT",
+            "AMOUNT": "-"
+        },
+        {
+            "id": 4,
+            "PARTICULAR": "TATA GROUP EMPLOYEE/VENDOR DISCOUNT",
+            "AMOUNT": "-"
+        },
+        {
+            "id": 5,
+            "PARTICULAR": "EXCHANGE BONUS",
+            "AMOUNT": "-"
+        },
+        {
+            "id": 6,
+            "PARTICULAR": "BASIC PRICE",
+            "AMOUNT": "10,78,550"
+        },
+        {
+            "id": 7,
+            "PARTICULAR": "C GST",
+            "AMOUNT": "1,50,997"
+        },
+        {
+            "id": 8,
+            "PARTICULAR": "S GST",
+            "AMOUNT": "1,50,997"
+        },
+        {
+            "id": 9,
+            "PARTICULAR": "CESS",
+            "AMOUNT": "32,356"
+        },
+        {
+            "id": 10,
+            "PARTICULAR": "NET TAXABLE VALUE",
+            "AMOUNT": "14,12,900"
+        },
+        {
+            "id": 11,
+            "PARTICULAR": "TCS (Tax Collected @ Source)",
+            "AMOUNT": "14,129",
+            "Option": "26 AS < 50K TDS"
+        },
+        {
+            "id": 12,
+            "PARTICULAR": "ROAD TAX",
+            "AMOUNT": "2,66,614",
+            "Option": "LTT - KA RGTD"
+        },
+        {
+            "id": 13,
+            "PARTICULAR": "REGISTRATION FEES / TR CHARGES",
+            "AMOUNT": "2,663",
+            "Option": "WITH H/P"
+        },
+        {
+            "id": 14,
+            "PARTICULAR": "FAST TAG ",
+            "AMOUNT": "400"
+        },
+        {
+            "id": 15,
+            "PARTICULAR": "INSURANCE - 1 YR OD + 3 YR TP",
+            "AMOUNT": "75,228"
+        },
+        {
+            "id": "15-A",
+            "PARTICULAR": "INS - ADD ONS",
+            "AMOUNT": "8,395",
+            "Option": "CONSUMABLES - YES RTI - YES ENGINE PROTECT - YES"
+        },
+        {
+            "id": 16,
+            "PARTICULAR": "EXTENDED WARRANTY",
+            "AMOUNT": "22,500",
+            "Option": "5TH YEAR"
+        },
+        {
+            "id": 17,
+            "PARTICULAR": "AMC",
+            "AMOUNT": "29,699",
+            "Option": "2YR / 30K"
+        },
+        {
+            "id": 18,
+            "PARTICULAR": "ESSENTIAL KIT",
+            "AMOUNT": "15,094",
+            "Option": "OPTED"
+        },
+        {
+            "id": 19,
+            "PARTICULAR": "ADDITIONAL ACCESSORY / OTHERS",
+            "AMOUNT": "-"
+        },
+        {
+            "id": 20,
+            "PARTICULAR": "TOTAL",
+            "AMOUNT": "18,47,622"
+        }
+    ],
+    "Total": [
+        {
+            "total": "Rupees Eighteen Lacs Forty Seven Thousand Six Hundred Twenty Two and Twenty Four Paisas Only"
+        }
+    ],
+    "Marchent": [
+        {
+            "Name": "PRERANA",
+            "GST": "29AABCP6557D1ZA",
+            "Pan": "AABCP6557D",
+            "CA": "RUDRESH M",
+            "Location": "RAJAJI NAGAR",
+            "PhNo": "9148206384",
+            "Date": "16-Dec-22"
+        }
+    ]
+}

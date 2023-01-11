@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    #main {
+        width: 832px;
+        font-family: Arial, Helvetica, sans-serif;
+        /* border: 1px solid black; */
+        padding: 20px;
+        line-height: 8px;
+    }
+
+    #Pan-GST {
+        padding: 0px 50px 0px 50px
+    }
+
+    #PAN {
+        text-align: right;
+        margin-top: -25px;
+    }
+
+    #head {
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    #information {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #buyer-info {
+        border: 2px solid black;
+        width: 45%;
+        padding: 4px
+    }
+
+    #vehical-details {
+        width: 45%;
+        margin-left: 55%;
+        margin-top: -19.8%;
+    }
+
+    #vehical-info {
+        border: 2px solid black;
+        padding: 4px;
+        /* height: 100px; */
+
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    tr {
+        border: 2px solid black;
+    }
+
+    td,
+    th {
+        /* border: 1px solid #dddddd; */
+        text-align: right;
+        padding: 8px;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #dddddd;
+    }
+
+    #Total {
+        font-weight: 600;
+    }
+</style>
+
+<body>
+
+    <div id="main">
+        <div>
+            <img src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_motors_logo.png" alt="">
+        </div>
+        <div id="Pan-GST">
+            {{#each Marchent}}
+            <p id="GST">{{this.Name}} GST - {{this.GST}}</p>
+            <p id="PAN">{{this.Name}} PAN - {{this.Pan}}</p>
+            {{/each}}
+        </div>
+        <p id="head">PROFORMA INVOICE</p>
+        <div id="information">
+            <div id="customer-details">
+                {{#each Marchent}}
+                <p> ISSUED @ <span>{{this.Location}}</span> CA NAME - <span>{{this.CA}}</span> </p>
+                {{/each}}
+                <div id="buyer-info">
+                    {{#each User}}
+                    <p>OPTY ID - </p>
+                    <p>Name - {{this.name}}</p>
+                    <p>Email ID - {{this.email}}</p>
+                    <p>Address - {{this.address}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div id="vehical-details">
+                {{#each Marchent}}
+                <p>Ph.No -{{this.PhNo}} PI DT - {{this.Date}}</p>
+                {{/each}}
+                <div id="vehical-info">
+                    <p style="text-align:center ;font-weight:600">VEHCILE DETAILS</p>
+                    {{#each Vehical}}
+                    <p>M - F - T - {{this.MFT}}</p>
+                    <p>VARIANT -{{this.variant}}</p>
+                    <p>COLOR -{{this.color}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div id="table">
+            <table>
+                <tr style="background-color:grey ;">
+                    <th style="text-align: center;padding: 8px;">S.No</th>
+                    <th style="text-align: center;padding: 8px;">PARTICULAR</th>
+                    <th style="text-align: right;padding: 8px;">Amount</th>
+                    <th></th>
+                </tr>
+                {{#each Products}}
+                <tr>
+                    <td style="text-align: center;padding: 8px;">{{this.id}}</td>
+                    <td style="text-align: left;padding: 8px;">{{this.PARTICULAR}}</td>
+                    <div>
+                        <td style="text-align: left;padding: 8px;">₹</td>
+                        <td style="text-align: right;padding: 8px;">{{this.AMOUNT}}</td>
+                    </div>
+                </tr>
+                {{/each}}
+            </table>
+
+            <div id="Total"
+                style="background-color: #dddddd;height: 20px;padding-top: 8px;border: 2px solid black;border-top: 0px;padding-left: 10px;">
+                <td style="text-align: center;font-weight: 600;">IN WORDS - </td>
+                <td id="Words" style="text-align: center;padding-left: 100px;">{{this.TotalInWords}} Rupees</td>
+            </div>
+
+        </div>
+        <div id="Bank">
+            {{#each Marchent}}
+            <p
+                style="border:1px solid black;background-color:#cccccc;text-align: center;padding: 8px;font-weight: 600;">
+                Account Details of
+                {{this.Name}}</p>
+            {{/each}}
+            {{#each bank}}
+            <p>ACCOUNT NO <span style="margin-left: 60px;">{{this.AccountNo}}</span> </p>
+            <p>IFSC <span style="margin-left: 130px;">{{this.IFSC}}</span> </p>
+            <p>BENEFICIARY NAME <span style="margin-left: 11px;">{{this.BENEFICIARY_NAME}}</span> </p>
+            <p>BANK <span style="margin-left: 123px;">{{this.BANK}}</span> </p>
+            <p>BRANCH <span style="margin-left: 100px;"> {{this.BRANCH}}</span></p>
+            <p>BRANCH ADDRESS <span style="margin-left: 16px;">{{this.BRANCH_ADDRESS}}</span></p>
+            <p>ACCOUNT TYPE <span style="margin-left: 45px;">{{this.ACCOUNT_TYPE}}</span> </p>
+            {{/each}}
+        </div>
+    </div>
+    <div id="main">
+        <div style="display:flex">
+            <img src="./Prerana.png" alt="Prerana">
+            <img src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_motors_logo.png" alt="">
+        </div>
+        <div id="Pan-GST">
+            {{#each Marchent}}
+            <p id="GST">{{this.Name}} GST - {{this.GST}}</p>
+            <p id="PAN">{{this.Name}} PAN - {{this.Pan}}</p>
+            {{/each}}
+        </div>
+        <p id="head">PROFORMA INVOICE</p>
+        <div id="information">
+            <div id="customer-details">
+                {{#each Marchent}}
+                <p> ISSUED @ <span>{{this.Location}}</span> CA NAME - <span>{{this.CA}}</span> </p>
+                {{/each}}
+                <div id="buyer-info">
+                    {{#each User}}
+                    <p>OPTY ID - </p>
+                    <p>Name - {{this.name}}</p>
+                    <p>Email ID - {{this.email}}</p>
+                    <p>Address - {{this.address}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div id="vehical-details">
+                {{#each Marchent}}
+                <p>Ph.No -{{this.PhNo}} PI DT - {{this.Date}}</p>
+                {{/each}}
+                <div id="vehical-info">
+                    <p style="text-align:center ;font-weight:600">VEHCILE DETAILS</p>
+                    {{#each Vehical}}
+                    <p>M - F - T - {{this.MFT}}</p>
+                    <p>VARIANT -{{this.variant}}</p>
+                    <p>COLOR -{{this.color}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div id="table">
+            <table>
+                <tr style="background-color:grey ;">
+                    <th style="text-align: center;padding: 8px;">S.No</th>
+                    <th style="text-align: center;padding: 8px;">PARTICULAR</th>
+                    <th style="text-align: right;padding: 8px;">Amount</th>
+                    <th></th>
+                </tr>
+                {{#each Products}}
+                <tr>
+                    <td style="text-align: center;padding: 8px;">{{this.id}}</td>
+                    <td style="text-align: left;padding: 8px;">{{this.PARTICULAR}}</td>
+                    <div>
+                        <td style="text-align: left;padding: 8px;">₹</td>
+                        <td style="text-align: right;padding: 8px;">{{this.AMOUNT}}</td>
+                    </div>
+                </tr>
+                {{/each}}
+            </table>
+
+            <div id="Total"
+                style="background-color: #dddddd;height: 20px;padding-top: 8px;border: 2px solid black;border-top: 0px;padding-left: 10px;">
+                <td style="text-align: center;font-weight: 600;">IN WORDS - </td>
+                <td id="Words" style="text-align: center;padding-left: 100px;">{{this.TotalInWords}} Rupees</td>
+            </div>
+
+        </div>
+        <div id="Bank">
+            {{#each Marchent}}
+            <p
+                style="border:1px solid black;background-color:#cccccc;text-align: center;padding: 8px;font-weight: 600;">
+                Account Details of
+                {{this.Name}}</p>
+            {{/each}}
+            {{#each bank}}
+            <p>ACCOUNT NO <span style="margin-left: 60px;">{{this.AccountNo}}</span> </p>
+            <p>IFSC <span style="margin-left: 130px;">{{this.IFSC}}</span> </p>
+            <p>BENEFICIARY NAME <span style="margin-left: 11px;">{{this.BENEFICIARY_NAME}}</span> </p>
+            <p>BANK <span style="margin-left: 123px;">{{this.BANK}}</span> </p>
+            <p>BRANCH <span style="margin-left: 100px;"> {{this.BRANCH}}</span></p>
+            <p>BRANCH ADDRESS <span style="margin-left: 16px;">{{this.BRANCH_ADDRESS}}</span></p>
+            <p>ACCOUNT TYPE <span style="margin-left: 45px;">{{this.ACCOUNT_TYPE}}</span> </p>
+            {{/each}}
+        </div>
+    </div>
+</body>
+
+</html>
