@@ -90,8 +90,10 @@
 <body>
 
     <div id="main">
-        <div>
-            <img src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_motors_logo.png" alt="">
+        <div style="display:flex;">
+            <img src="https://github.com/MadhanM282/Invoice/blob/main/Prerana.png?raw=true" alt="Prerana">
+            <img style="margin-left: 54%;"
+                src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_motors_logo.png" alt="">
         </div>
         <div id="Pan-GST">
             {{#each Marchent}}
@@ -172,47 +174,496 @@
             <p>ACCOUNT TYPE <span style="margin-left: 45px;">{{this.ACCOUNT_TYPE}}</span> </p>
             {{/each}}
         </div>
+        <p style="text-align: right;font-weight:bold">For Prerana Motors (P) Ltd</p>
     </div>
-    <div id="main">
+    
+    <!-- <div id="main" style="margin-top: 90px;">
+        <div style="display:flex;">
+            <img src="https://github.com/MadhanM282/Invoice/blob/main/Prerana.png?raw=true" alt="Prerana">
+            <img style="margin-left: 54%;"
+                src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_motors_logo.png" alt="">
+        </div>
+        <p id="head" style="margin-top:-10px ;">INFORMATION SHEET</p>
+        <div id="information">
+            <div id="customer-details" style="height:146px;width: fit-content;">
+                <div id="buyer-info" style="width:49%">
+                    <h4
+                        style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;margin-left: -5px;margin-right: -5px;margin-top: -5px;">
+                        BENEFITS -
+                        INSURANCE - IN HOUSE</h4>
+                    <p>Multiple Insurer options with wide coverage options</p>
+                    <p>Customized Add-on covers to suit your requirement</p>
+                    <p>Cashless accident repair facility @ Prerana Motors Pvt Ltd</p>
+                    <p>One-point of contact for issuance & management of policy</p>
+                    <p>Periodic policy renewal reminders</p>
+                    <p>Transparent and hassle-free claim settlement</p>
+                </div>
+            </div>
+            <div style="height:146px;width: 45%;margin-left: 55%;margin-top: -17.6%;">
+                <div id="vehical-info">
+                    <h4
+                        style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;margin-left: -5px;margin-right: -5px;margin-top: -5px;">
+                        BENEFITS - CAR LOAN - INHOUSE
+                    </h4>
+                    <p>Multiple Financier options offering competitve rates</p>
+                    <p>Faster approval & delivery of car</p>
+                    <p>One-point contact for your loan process</p>
+                    <p>Helpdesk on suggesting best ROI & loan schemes</p>
+                    <p>Flexibility - To fit your needs and budget</p>
+                    <p>Convenience - Most process covered @ dealership</p>
+
+                </div>
+            </div>
+        </div>
         <div style="display:flex">
-            <img src="./Prerana.png" alt="Prerana">
-            <img src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_motors_logo.png" alt="">
-        </div>
-        <div id="Pan-GST">
-            {{#each Marchent}}
-            <p id="GST">{{this.Name}} GST - {{this.GST}}</p>
-            <p id="PAN">{{this.Name}} PAN - {{this.Pan}}</p>
-            {{/each}}
-        </div>
-        <p id="head">PROFORMA INVOICE</p>
-        <div id="information">
-            <div id="customer-details">
-                {{#each Marchent}}
-                <p> ISSUED @ <span>{{this.Location}}</span> CA NAME - <span>{{this.CA}}</span> </p>
-                {{/each}}
-                <div id="buyer-info">
-                    {{#each User}}
-                    <p>OPTY ID - </p>
-                    <p>Name - {{this.name}}</p>
-                    <p>Email ID - {{this.email}}</p>
-                    <p>Address - {{this.address}}</p>
-                    {{/each}}
+            <div id="Purchase-Process" style="width: 50%;margin-top: 80px;">
+                <h4
+                    style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;margin-top: -5px;text-align: center;">
+                    A TO Z OF CAR PURCHASE PROCESS
+                </h4>
+                <div style="border-right:2px solid black;padding-right: 2px;">
+                    <div style="display:flex ;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 20%;text-align: center;">
+                            S.No</h4>
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 60%;margin-top:-47px;margin-left: 20%;text-align: center;padding-left: 7px;">
+                            PARTICULAR
+                        </h4>
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-47px;margin-left: 80%;text-align: center;">
+                            TAT</h4>
+                    </div>
+                    <div style="display:flex;margin-top: -24px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            A</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Enquiry
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex ;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 20%;text-align: center;">
+                            B</h4>
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Test Drive
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex ;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 20%;text-align: center;">
+                            C</h4>
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Booking
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            D</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            EDD Communication
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            E</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Booking Confirmation Mail
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-47.8px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            C + 1 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -22px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            F</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Document Collection for Loan
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            G</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Cibil Check & File Login
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-45.5px;margin-left: 80%;text-align: center;border-bottom: 2px solid black;">
+                            C
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;background-color: #cccccc;">
+                            H</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;background-color: #cccccc;">
+                            Car Allocation
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-47.8px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            D
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            I</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Allocation Confirmation Mail
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            J</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Down Payment Collection
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                            H + 1 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -19px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            K</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Loan Agreement
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            L</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Full Payment
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            K + 1 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            M</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Retail Invoice
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            H + 7 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -22px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;background-color: #cccccc;">
+                            N</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;background-color: #cccccc;">
+                            Delivery Scheduler Mail
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            O</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Insurance Generation
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-45.5px;margin-left: 80%;text-align: center;border-bottom: 2px solid black;">
+                            M + 1 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            P</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            RTO Registration
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            Q</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Number Allocation
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            R</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            HSRP Ordering
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            S</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Extended Warranty Rgtd
+
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                            M + 6 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -19px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            T</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Down Payment Collection
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            U</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58.3%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;border-left:0px;">
+                            Fast Tag Activation
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;background-color: #cccccc;">
+                            V</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;background-color: #cccccc;">
+                            Delivery Ceremony
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-48px;margin-left: 80%;text-align: center;">
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -11px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            W</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            KYC Registration
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-47.8px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            V
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            X</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Prerana Feedback Call
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-47.8px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            V + 7 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            Y</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            Tata Feedback Call
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-47.8px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            V + 21 DAY
+                        </h4>
+                    </div>
+                    <div style="display:flex;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 19.5%;text-align: center;">
+                            Z</h4>
+                        <h4
+                            style="border: 2px solid black;padding:7px 0px;margin-top: 0px;width: 58%;margin-top:-47px;margin-left: 20%;text-align: left;padding-left: 7px;">
+                            RC Dispatch
+                        </h4>
+                        <h4
+                            style="padding:7px 0px;margin-top: 0px;width: 20%;margin-top:-47.8px;margin-left: 80%;text-align: center;border: 2px solid black;">
+                            90 DAYS
+                        </h4>
+                    </div>
                 </div>
             </div>
-            <div id="vehical-details">
-                {{#each Marchent}}
-                <p>Ph.No -{{this.PhNo}} PI DT - {{this.Date}}</p>
-                {{/each}}
-                <div id="vehical-info">
-                    <p style="text-align:center ;font-weight:600">VEHCILE DETAILS</p>
-                    {{#each Vehical}}
-                    <p>M - F - T - {{this.MFT}}</p>
-                    <p>VARIANT -{{this.variant}}</p>
-                    <p>COLOR -{{this.color}}</p>
-                    {{/each}}
+            <div style="width: 45%;margin-top: -83.3%;margin-left: 55%;height: 667px;border: 2px solid black;">
+                <div>
+                    <h4
+                        style="border-bottom: 2px solid black;border-top: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: -2px;text-align: center;">
+                        DOCUMENT - CHECK LIST
+                    </h4>
+                    <div style="display:flex ;margin-top: -23px;">
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 30%;text-align: center;">
+                            DOCUMENT</h4>
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 25%;margin-top:-47px;margin-left: 30%;text-align: center;padding-left: 7px;">
+                            SALARIED
+                        </h4>
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 26.4%;margin-top:-47px;margin-left: 57.5%;text-align: center;">
+                            BUSINESS</h4>
+                        <h4
+                            style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;width: 15%;margin-top:-48px;margin-left: 84.5%;text-align: center;">
+                            FIRM</h4>
+                    </div>
                 </div>
             </div>
         </div>
+        <div style="margin-top: 10px;">
+            <h4
+                style="border: 2px solid black;background:#cccccc;padding:7px 0px;margin-top: 0px;margin-top: -5px;text-align: center;">
+                TOUCH POINTS & ESCLATION MARTIX
+            </h4>
+            <table style="margin-top: -24px;">
+                <tr style="background-color:#cccccc ;">
+                    <th style="border:2px solid black;text-align: center;padding: 8px;">MATRIX</th>
+                    <th style="border:2px solid black;text-align: left;padding: 8px;">Role</th>
+                    <th style="border:2px solid black;text-align: center;padding: 8px;">Name</th>
+                    <th style="border:2px solid black;text-align: center;padding: 8px;">MOBILE</th>
+                    <th style="border:2px solid black;text-align: center;padding: 8px;">MAIL ID</th>
+                </tr>
+
+                <tr>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold"></td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">ACCESSORY</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">MANSOOR</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">9845136162</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">
+                        accessories@preranamotors.com</td>
+                </tr>
+                <tr style="background-color: #ffffff;">
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold"></td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">FINANCE</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">MANJUNATH. S.J
+                    </td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">9686654556</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">
+                        hprnr@pcd.preranamotors.com</td>
+                </tr>
+                <tr>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">LEVEL 1</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">CUST ADVISOR</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">RUDRESH M</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">9148206384</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold"></td>
+                </tr>
+                <tr style="background-color: #ffffff;">
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">LEVEL 2</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">TEAM LEADER </td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">DHARANENDRA V</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">9591079454</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">
+                        tl1rnr@pcd.preranamotors.com </td>
+                </tr>
+                <tr>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">LEVEL 3</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">SALES MANAGER</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">LOHITH V </td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">6366323728</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">
+                        operations@pcd.preranamotors.com
+                    </td>
+                </tr>
+                <tr style="background-color: #ffffff;">
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">LEVEL 4</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">CUST RELATIONS
+                    </td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">S NARAYAN HEGDE
+                    </td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">9945176162</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">
+                        cust_rel@pcd.preranamotors.com
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">LEVEL 5</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">SALES HEAD</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">AJITH J</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">9731309701</td>
+                    <td style="border:2px solid black;text-align: left;padding: 8px;font-weight:bold">
+                        Ajith@pcd.preranamotors.com</td>
+                </tr>
+
+            </table>
+        </div> 
         <div id="table">
             <table>
                 <tr style="background-color:grey ;">
@@ -240,7 +691,7 @@
             </div>
 
         </div>
-        <div id="Bank">
+         <div id="Bank" style="margin-top:90px ;">
             {{#each Marchent}}
             <p
                 style="border:1px solid black;background-color:#cccccc;text-align: center;padding: 8px;font-weight: 600;">
@@ -257,7 +708,7 @@
             <p>ACCOUNT TYPE <span style="margin-left: 45px;">{{this.ACCOUNT_TYPE}}</span> </p>
             {{/each}}
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>

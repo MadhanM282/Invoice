@@ -29,9 +29,9 @@ app.post("/download_invoice", async (req, res) => {
     const options = {
       format: "A4",
       orientation: "portrait",
-      border: "10mm",
+      border: "7mm",
       footer: {
-        height: "28mm",
+        height: "40px",
         contents: {
           first: "",
           2: "", // Any page number is working. 1-based index
